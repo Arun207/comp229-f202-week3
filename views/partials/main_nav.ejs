@@ -6,42 +6,23 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <% if (title == "Home") { %>
-          <li class="nav-item active">
-          <% } else { %> 
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-          <% } %>
-            <a class="nav-link " href="/home"><i class="fas fa-lg fa-sharp fa-solid fa-house-laptop"></i> Home</a>
-          </li>
-          <% if (title == "About") { %>
-          <li class="nav-item active">
-          <% } else { %> 
-          <li class="nav-item">
-          <% } %>
-            <a class="nav-link"  href="/about"><i class="fas fa-lg fa-solid fa-circle-info"></i> About</a>
-          </li>
 
-           <% if (title == "Products") { %>
-          <li class="nav-item active">
-          <% } else { %> 
-          <li class="nav-item">
-          <% } %>
-            <a class="nav-link"  href="/products"><i class="fas fa-lg fa-brands fa-elementor"></i> Products</a>
+             <a class="nav-link <%= (title == 'Home' ? ' active' : '') %>" aria-current="page" href="/home"><i class="fas fa-lg fa-sharp fa-solid fa-house-laptop"></i>Home</a>
           </li>
-           <% if (title == "Services") { %>
-          <li class="nav-item active">
-          <% } else { %> 
           <li class="nav-item">
-          <% } %>
-            <a class="nav-link"  href="/services"><i class="fas fa-lg fa-sharp fa-solid fa-gears"></i> Services</a>
+            <a class="nav-link <%= (title == 'About' ? ' active' : '') %>" aria-current="page" href="/About"><i class="fas fa-lg fa-solid fa-circle-info"></i>About Me</a>
           </li>
-           <% if (title == "Contact") { %>
-          <li class="nav-item active">
-          <% } else { %> 
           <li class="nav-item">
-          <% } %>
-            <a class="nav-link"  href="/contact"> <i class="fas fa-lg fa-solid fa-mobile-screen-button"></i> Contact</a>
+            <a class="nav-link <%= (title == 'Products' ? ' active' : '') %>" aria-current="page" href="/Products"><i class="fas fa-lg fa-brands fa-elementor"></i>Projects</a>
+          </li>
+          <li>
+           <li class="nav-item">
+            <a class="nav-link <%= (title == 'Services' ? ' active' : '') %>" aria-current="page" href="/Services"><i class="fas fa-lg fa-sharp fa-solid fa-gears"></i>Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link <%= (title == 'Contact' ? ' active' : '') %>" aria-current="page" href="/Contact"><i class="fas fa-lg fa-solid fa-mobile-screen-button"></i>Contact</a>
           </li>
       </div>
     </div>
