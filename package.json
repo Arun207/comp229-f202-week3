@@ -1,9 +1,13 @@
 {
-  "name": "comp229-f202-week3",
+  "name": "comp229-f2022-week3",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^16.00.0",
+    "npm": "^8.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -29,5 +33,12 @@
   "bugs": {
     "url": "https://github.com/Arun207/comp229-f202-week3/issues"
   },
-  "homepage": "https://github.com/Arun207/comp229-f202-week3#readme"
+  "homepage": "https://github.com/Arun207/comp229-f202-week3#readme",
+  "keywords": [
+    "demo",
+    "app",
+    "for",
+    "week",
+    "3"
+  ]
 }
